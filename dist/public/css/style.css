@@ -1,0 +1,257 @@
+
+/* Improve Typography with CSS
+
+*, *:before, *:after {
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-feature-settings: "kern";
+	font-kerning: normal;
+	box-sizing: border-box;
+}
+html.touch *,html.touch *:before,html.touch *:after {
+	text-rendering: optimizeSpeed;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.5rem;
+	user-select: text;
+}
+
+*/
+
+body {
+  background: rgba(0, 0, 0, 0.03);
+  font-family: 'Roboto','Karla', sans-serif;
+}
+
+
+section.screens .d {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 920px 920px 0;
+    border-color: transparent #ffffff transparent transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transform: translate(0, 0);
+    transition: transform .6s ease;
+}
+
+.mainbox {
+  width: 375px;
+  height: 667px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  background-color: #000;
+  -webkit-box-shadow: 0px 0px 71px -10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 71px -10px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 71px -10px rgba(0,0,0,0.3);
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  font-size: 100px;
+  color: #FFF;
+  position: absolute;
+  margin: 66px 0 0 -7px;
+  z-index: 900;
+}
+h3 {
+  font-weight: 700;
+  *text-align: center;
+  color: #4CB4F0;
+}
+.insidebox {
+  background: rgba(0,145,229,1);
+  background: -moz-linear-gradient(45deg, rgba(0,145,229,1) 0%, rgba(0,145,229,1) 47%, rgba(0,162,255,1) 47%, rgba(0,162,255,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,145,229,1)), color-stop(47%, rgba(0,145,229,1)), color-stop(47%, rgba(0,162,255,1)), color-stop(100%, rgba(0,162,255,1)));
+  background: -webkit-linear-gradient(45deg, rgba(0,145,229,1) 0%, rgba(0,145,229,1) 47%, rgba(0,162,255,1) 47%, rgba(0,162,255,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(0,145,229,1) 0%, rgba(0,145,229,1) 47%, rgba(0,162,255,1) 47%, rgba(0,162,255,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(0,145,229,1) 0%, rgba(0,145,229,1) 47%, rgba(0,162,255,1) 47%, rgba(0,162,255,1) 100%);
+  background: linear-gradient(45deg, rgba(0,145,229,1) 0%, rgba(0,145,229,1) 47%, rgba(0,162,255,1) 47%, rgba(0,162,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0091e5', endColorstr='#00a2ff', GradientType=1 );
+  width: 100%;
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+}
+
+.iconholder {
+  width: 100%;
+  position: absolute;
+  top: 145px;
+}
+
+.chaticonbox {
+  width: 100px;
+  height: 100px;
+  background: #FFBDB8;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 500;
+
+  -moz-border-radius: 12x 12px 12px 0;
+  -webkit-border-radius: 12px 12px 12px 0;
+  border-radius: 12px 12px 12px 0;
+
+  -webkit-box-shadow: 0px 80px 130px 5px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 80px 130px 5px rgba(0,0,0,0.4);
+  box-shadow: 0px 80px 130px 5px rgba(0,0,0,0.4);
+}
+
+
+.insideiconblackbars {
+  height: 5px;
+  width: 35px;
+  position: absolute;
+  display: block;
+  content: '';
+  top: 56px;
+  left: 20px;
+}
+
+.insideiconblackbars span,
+.insideiconblackbars span:before {
+  height: 8px;
+  width: 30px;
+  background-color: #000;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+.insideiconblackbars span:before {
+  top: -20px;
+  width: 60px;
+}
+
+.triangleholder {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.triangleunder {
+  position: relative;
+  right: 0;
+  top: 0;
+  color: #fff;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 25px 25px 0;
+  border-color: transparent #ad807d transparent transparent;
+}
+
+
+
+.loginbox {
+  width: 88%;
+  height: 270px;
+  background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: -55px;
+  padding: 34px;
+  z-index: 600;
+}
+/*
+.loginbox a {
+  width: 100%;
+  height: 60px;
+  background-color: #118BFF;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: right;
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 21px 41px 0 0;
+}
+
+.loginbox a span {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 7px solid #FFF;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  left: 40px;
+  top: 26px;
+}
+ */
+.bottomfootertext {
+  text-align: center;
+  color: #FFF;
+  font-size: 11px;
+  margin-top: 27px;
+}
+
+.bottomfootertext a {
+  color: #FFF;
+  font-weight: 700;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 4px;
+}
+
+.outsidetoptext {
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  text-align: center;
+  margin: 4% 20% 2% 20%;
+}
+
+.outsidetoptext p:last-child {
+  font-weight: bold;
+}
+
+.outsidebottomtext {
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  text-align: center;
+  margin: 0 0 4% 0;
+}
+
+
+/* overwrite of some css style from materialize.css */
+
+.input-field label {
+  color: #9C6C6A;
+  position: absolute;
+  top: 0.8rem;
+  left: 0.75rem;
+  font-size: 0.9rem;
+  cursor: text;
+  transition: .2s ease-out;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+input:not([type]), input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"], textarea.materialize-textarea {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0;
+  box-shadow: none;
+  box-sizing: content-box;
+  transition: all .3s;
+
+  border-bottom: 1px solid #CCC;
+  margin: 0;
+}

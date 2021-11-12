@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empower Smartcity | Apurav Chauhan</title>
+  <link rel="stylesheet" href="public/css/normalize.css">
+  <link rel='stylesheet prefetch' href='public/css/materialize.min.css'>
+  <link rel="stylesheet" href="public/css/style.css">
+  <link href="public/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="black" ng-strict-di ng-cloak>
+
+  <app> Loading ... </app>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content center">
+      <div class="preloader-wrapper small active">
+        <div class="spinner-layer spinner-green-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <p>Checking if internet & location services are enabled.</p>
+      <p>Tap to skip.</p>
+    </div>
+  </div>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript">
+    var map;
+    isCordova = document.URL.indexOf('http://') === -1;
+    document.addEventListener('deviceready', function() {
+      isCordova = true;
+    }, false);
+  </script>
+  <script>
+    function initMap() {
+
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1e9hOZX5uQk_yDZZHT6_Gw2bxFekCdu8&callback=initMap">
+  </script>
+<script src="public/vendor.bundle.js?53c526b08eb0f86b7982"></script><script src="public/app.bundle.js?53c526b08eb0f86b7982"></script></body>
+</html>
